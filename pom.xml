@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>com.google.http-client</groupId>
 			<artifactId>google-http-client</artifactId>
-			<version>1.17.0-rc</version>
+			<version>1.20.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>
@@ -80,4 +80,18 @@
             </exclusions>
         </dependency>
     </dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>	
 </project>
